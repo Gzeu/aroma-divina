@@ -3,170 +3,204 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Aroma Divina - Cafea premium online. Proaspat prajita zilnic. Origini sustenabile, livrare gratuita.">
-  <meta name="keywords" content="cafea premium online Romania, cafea boabe, cafea artizanala, espresso">
-  <title>Aroma Divina | Cafea Premium 2026</title>
+  <meta name="description" content="Aroma Divina - Cafea premium online. Cafea artizanala prajita proaspat din plantatiie selectate. Livrare gratuita peste 200 lei.">
+  <meta name="keywords" content="cafea premium online Romania, cafea boabe, cafea artizanala, espresso, cafea prajita">
+  <meta name="author" content="Aroma Divina">
+  <meta property="og:title" content="Aroma Divina - Cafea Premium Online">
+  <meta property="og:description" content="Cafea artizanala prajita proaspat din plantatiie sustenabile">
+  <title>Aroma Divina | Cafea Premium Online - Prajita Proaspat</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- NAV HEADER -->
-  <nav class="navbar">
-    <div class="container flex items-center justify-between">
-      <a href="#" class="logo">Aroma Divina</a>
-      <div class="nav-links flex gap-8">
-        <a href="#" class="nav-link">Colectii</a>
-        <a href="#" class="nav-link">Despre</a>
-        <a href="#" class="nav-link">Blog</a>
-        <a href="#" class="btn-sm">Cos</a>
+  <!-- NAV -->
+  <nav class="navbar sticky">
+    <div class="container nav-content">
+      <h1 class="logo">Aroma Divina</h1>
+      <div class="nav-links">
+        <a href="#produse">Produse</a>
+        <a href="#beneficii">Beneficii</a>
+        <a href="#testimoniale">Testimoniale</a>
+        <a href="#contact" class="btn-nav">Contact</a>
       </div>
     </div>
   </nav>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-gradient"></div>
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1 class="hero-title">Ritualul Perfect al Diminetii</h1>
-        <p class="hero-subtitle">Cafea artizanala prajita proaspat, din plantatiie selectate. Fiecare ceasca, o experienta senzoriala.</p>
-        <div class="hero-buttons flex gap-6">
-          <button class="btn btn-primary">Descopera Colectii</button>
-          <button class="btn btn-secondary">Abonare Lunara</button>
-        </div>
+  <!-- HERO -->
+  <section class="hero" style="background: linear-gradient(rgba(58,42,30,0.4), rgba(58,42,30,0.4)), url('https://cdn.shopify.com/s/files/1/0602/4989/9255/files/EA_EmberOct_2-26.jpg?v=1755706777') center/cover no-repeat; background-attachment: fixed;">
+    <div class="hero-content">
+      <h2>Ritualul Perfect al Diminetii</h2>
+      <p>Cafea artizanala prajita proaspat, selectata din cele mai bune plantatiie sustenabile.</p>
+      <p>Fiecare ceasca, o experienta senzoriala unica.</p>
+      <div class="hero-cta">
+        <a href="#produse" class="btn btn-primary">Cumpora Acum</a>
+        <a href="#contact" class="btn btn-secondary">Aboneaza-te</a>
       </div>
-      <div class="hero-visual">
-      <div class="hero-visual"><img src="https://images.unsplash.com/photo-1495474472645-4cffed267d50?w=500&h=500&fit=crop" alt="Premium Coffee" class="hero-image"></div>      </div>
     </div>
   </section>
 
-  <!-- FEATURED PRODUCTS -->
-  <section class="featured">
+  <!-- PRODUSE -->
+  <section id="produse" class="produse">
     <div class="container">
-      <h2 class="section-title">Bestsellerul Sezonului</h2>
+      <h2>Bestsellerul Sezonului</h2>
+      <p class="subtitle">Selectii exclusive din plantatiie certificate</p>
+      
       <div class="products-grid">
-        <div class="product-card glasmorphic">
-          <div class="product-tag premium">PREMIUM</div>
-          <img src="https://images.unsplash.com/photo-1559056169-641ef8a20c20?w=400&h=400&fit=crop" alt="Arabica Ethiopia" class="product-image"></div>          <h3>100% Arabica Ethiopia</h3>
-          <p>Note florale, corpo delicat, citrice vibrante</p>
-          <div class="product-footer flex justify-between items-center">
-            <span class="price">49 RON</span>
-            <button class="btn-icon">+</button>
-          </div>
+        <!-- Produs 1 -->
+        <div class="product-card">
+          <div class="product-img" style="background: url('https://www.homegrounds.co/wp-content/uploads/2021/01/light-roast-coffee-beans-1200x675.jpg') center/cover"></div>
+          <div class="product-badge">Bestseller</div>
+          <h3>100% Arabica Ethiopia</h3>
+          <p>Note florale delicate, corpo delicat, citrice vibrante. Prajita artizanal pentru prospetime maxima.</p>
+          <div class="product-price">49 RON</div>
+          <div class="product-size">250g</div>
+          <button class="btn btn-small">Adauga in cos</button>
         </div>
 
-        <div class="product-card glasmorphic">
-          <div class="product-tag hot">SELECTIE</div>
-          <div class="product-image gradient-brown">☕</div>
+        <!-- Produs 2 -->
+        <div class="product-card">
+          <div class="product-img" style="background: url('https://www.cooperscoffeeco.com/wp-content/uploads/2025/08/b0bed3e8-2f11-4594-8770-124c2ad8b176.png') center/cover"></div>
+          <div class="product-badge">Top Vanzari</div>
           <h3>Blend Espresso Intens</h3>
-          <p>Crema bogata, corp full-body, cacao profund</p>
-          <div class="product-footer flex justify-between items-center">
-            <span class="price">119 RON</span>
-            <button class="btn-icon">+</button>
-          </div>
+          <p>Crema bogata, corp full-body, aroma de cacao profunda. Perfectiunea pentru espresso zilnic.</p>
+          <div class="product-price">119 RON</div>
+          <div class="product-size">1kg</div>
+          <button class="btn btn-small">Adauga in cos</button>
         </div>
 
-        <div class="product-card glasmorphic">
-          <div class="product-tag new">NOU</div>
-          <div class="product-image gradient-copper">☕</div>
-          <h3>Single Origin Colombia</h3>
-          <p>Dulce, caramel, nuci, impeccabil equilibrat</p>
-          <div class="product-footer flex justify-between items-center">
-            <span class="price">55 RON</span>
-            <button class="btn-icon">+</button>
-          </div>
+        <!-- Produs 3 -->
+        <div class="product-card">
+          <div class="product-img" style="background: url('https://www.roastedrecord.com/cdn/shop/files/coffee-beans-texture.jpg?v=1690392590&width=2400') center/cover"></div>
+          <div class="product-badge">NOU</div>
+          <h3>Single Origin Brazil Mogiana</h3>
+          <p>Note dulci de caramel si nuci, corp echilibrat, finish curat. Ideal pentru preparare manuala.</p>
+          <div class="product-price">55 RON</div>
+          <div class="product-size">500g</div>
+          <button class="btn btn-small">Adauga in cos</button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FEATURES SECTION -->
-  <section class="features">
+  <!-- BENEFICII -->
+  <section id="beneficii" class="beneficii">
     <div class="container">
-      <div class="features-grid">
-        <div class="feature-box glasmorphic">
-          <div class="feature-icon">✓</div>
-          <h4>Prajit Zilnic</h4>
-          <p>Prospetime garantata, arome intense</p>
+      <h2>De ce sa alegi Aroma Divina?</h2>
+      
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-fire"></i>
+          </div>
+          <h3>Prajire Artizanala Zilnica</h3>
+          <p>Prospetime garantata, cu arome intense eliberate la fiecare sorbitura. Cafea boabe premium direct de la tine acasa.</p>
         </div>
-        <div class="feature-box glasmorphic">
-          <div class="feature-icon">🌍</div>
-          <h4>Origini Sustenabile</h4>
-          <p>Plantatiie certificate, comert echitabil</p>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3>Origini Sustenabile</h3>
+          <p>Plantatiie certificate, trasabilitate totala, comert echitabil. Gust autentic fara impact asupra planetei.</p>
         </div>
-        <div class="feature-box glasmorphic">
-          <div class="feature-icon">🚚</div>
-          <h4>Livrare Gratuita</h4>
-          <p>Peste 200 RON, in 24-48h</p>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-truck"></i>
+          </div>
+          <h3>Livrare Gratuita</h3>
+          <p>Peste 200 RON, in 24-48h oriunde in Romania. Ambalaj eco-friendly si sigur.</p>
         </div>
-        <div class="feature-box glasmorphic">
-          <div class="feature-icon">❤</div>
-          <h4>Garantie 100%</h4>
-          <p>Satisfactie sau bani inapoi</p>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Garantie 100%</h3>
+          <p>Satisfactie sau bani inapoi. Risc zero pentru diminetile tale perfecte.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="testimonials">
+  <!-- TESTIMONIALE -->
+  <section id="testimoniale" class="testimoniale">
     <div class="container">
-      <h2 class="section-title">Clientii Noștri Iubesc Aroma</h2>
+      <h2>Ce Spun Clientii Nostri</h2>
+      
       <div class="testimonials-grid">
-        <div class="testimonial-card glasmorphic">
+        <div class="testimonial-card">
           <div class="stars">★★★★★</div>
-          <p>"Cea mai buna cafea pe care am gustat-o. Aroma persistenta, calitate excepcionale."</p>
+          <p>"Cea mai buna cafea pe care am gustat-o vreodata! Aroma persistenta, calitate excepcionale. Absolut recomandat!"</p>
           <strong>Maria P. - Bucuresti</strong>
         </div>
-        <div class="testimonial-card glasmorphic">
+
+        <div class="testimonial-card">
           <div class="stars">★★★★★</div>
-          <p>"Abonamentul lunar a schimbat ritualul matinal. Mereu proaspat, mereu excelent."</p>
+          <p>"Abonamentul lunar mi-a schimbat ritualul matinal. Mereu proaspat, mereu excelent. Livrare rapida si profesionala."</p>
           <strong>Andrei S. - Cluj</strong>
         </div>
-        <div class="testimonial-card glasmorphic">
+
+        <div class="testimonial-card">
           <div class="stars">★★★★★</div>
-          <p>"Blend-ul intens e perfectiune pura. Livrare rapida, ambalaj excelent."</p>
+          <p>"Blend-ul intens e perfectiune pura. Livrare rapida, ambalaj excelent, serviciu de top. O platforma intr-adevar premium!"</p>
           <strong>Elena M. - Timisoara</strong>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA FINAL -->
-  <section class="cta-final">
-    <div class="container text-center">
-      <h2>Aboneaza-te la Ritualul Zilei</h2>
-      <p>Primesti 15% reducere la prima comandă</p>
-      <form class="newsletter-form flex gap-3 max-w-md mx-auto">
-        <input type="email" placeholder="Email@example.com" required>
-        <button type="submit" class="btn btn-primary">Aboneaza</button>
+  <!-- CONTACT/NEWSLETTER -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Incepe Ritualul Tau Zilnic</h2>
+      <p>Primesti 15% reducere la prima comanda cand te abonezi la newsletter</p>
+      
+      <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+        <input type="email" placeholder="Adresa ta de email..." required>
+        <button type="submit" class="btn btn-primary">Aboneaza-te</button>
       </form>
+      
+      <div class="contact-info">
+        <p><strong>Email:</strong> contact@aromadivin.ro</p>
+        <p><strong>Telefon:</strong> +40 723 456 789</p>
+        <p><strong>Program:</strong> Luni - Vineri 9:00 - 18:00</p>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-section">
-        <h4>Aroma Divina</h4>
-        <p>Cafea premium, ritualul tau zilnic.</p>
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Aroma Divina</h4>
+          <p>Cafea premium, ritualul tau zilnic. Prajit proaspat, selectat cu pasiune.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Linkuri Rapide</h4>
+          <ul>
+            <li><a href="#produse">Produse</a></li>
+            <li><a href="#beneficii">Beneficii</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Urmareste-ne</h4>
+          <div class="social-links">
+            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
       </div>
-      <div class="footer-section">
-        <h4>Linkuri</h4>
-        <ul>
-          <li><a href="#">Colectii</a></li>
-          <li><a href="#">Despre</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Intra in Contact</h4>
-        <p>Instagram • Facebook • TikTok</p>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aroma Divina. Toate drepturile rezervate. | Termeni si Conditii | Politica de Confidentialitate</p>
       </div>
     </div>
-    <div class="footer-bottom">© 2026 Aroma Divina. Premium Coffee Experience.</div>
   </footer>
 
   <script src="script.js"></script>

@@ -1,0 +1,104 @@
+/* ===== COLOR VARIABLES ===== */
+:root {
+  --dark-brown: #4A2C2A;
+  --light-brown: #6B4423;
+  --cream-bg: #F5F0E1;
+  --gold: #D4AF37;
+  --black: #1A1A1A;
+  --white: #FFFFFF;
+  --gray: #8B8B8B;
+}
+
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--black);
+  line-height: 1.6;
+}
+
+h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 700; }
+h1 { font-size: 3.5rem; } h2 { font-size: 2.5rem; } h3 { font-size: 1.5rem; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+.btn {
+  padding: 1rem 2rem; border: none; border-radius: 50px;
+  font-size: 1rem; font-weight: 600; cursor: pointer;
+  transition: all 0.3s ease; text-decoration: none;
+}
+
+.btn-primary { background-color: var(--gold); color: white; }
+.btn-primary:hover { background-color: #C9A227; transform: translateY(-2px); }
+
+.btn-secondary { background-color: transparent; color: var(--gold); border: 2px solid var(--gold); }
+.btn-secondary:hover { background-color: var(--gold); color: white; }
+
+.btn-cart { width: 100%; background-color: var(--gold); color: white; margin-top: 1rem; }
+
+.hero {
+  height: 90vh; background: linear-gradient(rgba(74,44,42,0.3), rgba(74,44,42,0.3)), var(--cream-bg);
+  display: flex; align-items: center; justify-content: center; position: relative;
+}
+
+.hero-content { text-align: center; color: white; max-width: 700px; z-index: 2; }
+.hero-content h1 { color: var(--gold); font-size: 4rem; margin-bottom: 1.5rem; }
+.hero-content p { font-size: 1.2rem; margin-bottom: 2rem; }
+.hero-buttons { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
+
+.products { padding: 100px 0; background-color: white; }
+.products h2 { text-align: center; color: var(--dark-brown); margin-bottom: 3rem; }
+.grid-products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+
+.product-card {
+  background-color: var(--cream-bg); border-radius: 12px; padding: 1.5rem;
+  transition: transform 0.3s ease; position: relative;
+}
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(212,175,55,0.2); }
+.product-badge { position: absolute; top: 1rem; right: 1rem; background-color: #D9534F; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.8rem; }
+.product-image { width: 100%; height: 300px; background: linear-gradient(135deg, var(--gold), var(--light-brown)); border-radius: 8px; margin-bottom: 1rem; }
+.product-card h3 { color: var(--dark-brown); }
+.product-price { font-size: 1.5rem; color: var(--gold); font-weight: 700; margin-bottom: 1rem; }
+
+.benefits { padding: 100px 0; background-color: var(--cream-bg); }
+.benefits h2 { text-align: center; color: var(--dark-brown); margin-bottom: 3rem; }
+.grid-benefits { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; }
+.benefit-card { text-align: center; padding: 2rem; background-color: white; border-radius: 12px; }
+.benefit-icon { font-size: 3rem; margin-bottom: 1rem; }
+
+.testimonials { padding: 100px 0; background-color: white; }
+.testimonials h2 { text-align: center; color: var(--dark-brown); margin-bottom: 3rem; }
+.carousel { display: flex; overflow-x: auto; gap: 2rem; }
+.testimonial-card { flex: 0 0 calc(33.333% - 1.33rem); background-color: var(--cream-bg); padding: 2rem; border-radius: 12px; }
+.testimonial-card p { font-style: italic; margin-bottom: 1rem; }
+.stars { color: var(--gold); }
+
+.newsletter { padding: 80px 0; background: linear-gradient(rgba(74,44,42,0.7), rgba(74,44,42,0.7)), var(--cream-bg); text-align: center; color: white; }
+.newsletter-content h2 { color: var(--gold); margin-bottom: 1rem; }
+.newsletter-form { display: flex; gap: 0.5rem; max-width: 500px; margin: 0 auto; justify-content: center; flex-wrap: wrap; }
+.newsletter-form input { flex: 1; min-width: 250px; padding: 1rem; border: none; border-radius: 50px; }
+
+footer { background-color: var(--black); color: white; padding: 60px 0 20px; }
+.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-bottom: 3rem; }
+.footer-col h4 { color: var(--gold); margin-bottom: 1rem; }
+.footer-col ul { list-style: none; }
+.footer-col a { color: white; text-decoration: none; transition: color 0.3s; }
+.footer-col a:hover { color: var(--gold); }
+.footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid gray; }
+
+@media (max-width: 768px) {
+  h1 { font-size: 2.5rem; } h2 { font-size: 2rem; }
+  .hero { height: 70vh; }
+  .hero-content h1 { font-size: 2rem; }
+  .grid-products, .grid-benefits { grid-template-columns: 1fr; }
+  .testimonial-card { flex: 0 0 100%; }
+  .newsletter-form { flex-direction: column; }
+  .newsletter-form input, .newsletter-form button { width: 100%; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 2rem; } h2 { font-size: 1.5rem; }
+  .hero { height: 60vh; }
+}

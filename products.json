@@ -1,0 +1,8 @@
+[
+  {"id":1,"name":"100% Arabica Ethiopia","price":49,"size":"250g","img":"https://example.com/ethiopia.jpg","desc":"Note florale delicate, citrice vibrante."},
+  {"id":2,"name":"Blend Espresso Intens","price":119,"size":"1kg","img":"https://example.com/blend.jpg","desc":"Crema bogata, cacao profunda."},
+  {"id":3,"name":"Single Origin Brazil","price":55,"size":"500g","img":"https://example.com/brazil.jpg","desc":"Caramel, nuci, finish curat."},
+  {"id":4,"name":"Colombia Supremo","price":59,"size":"250g","img":"https://example.com/colombia.jpg","desc":"Fructe tropicale, aciditate echilibrata."},
+  {"id":5,"name":"Guatemala Antigua","price":62,"size":"500g","img":"https://example.com/guatemala.jpg","desc":"Ciocolata, florale, corp mediu."},
+  {"id":6,"name":"Decaf Ethiopia","price":52,"size":"250g","img":"https://example.com/decaf.jpg","desc":"Note dulci fara cofeina, proces Swiss Water."}
+]

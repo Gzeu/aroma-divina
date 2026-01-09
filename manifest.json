@@ -1,0 +1,9 @@
+{
+  "name": "Aroma Divina",
+  "short_name": "AromaDivina",
+  "icons": [{"src":"/icon-512.png","sizes":"512x512","type":"image/png"}],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#3a2a1e",
+  "background_color": "#f5f0e6"
+}
